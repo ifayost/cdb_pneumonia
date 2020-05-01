@@ -19,7 +19,7 @@ def crop_images(im, shapes):
 
 if __name__ == '__main__':
 
-	path = os.path.join(sys.argv[1], 'train')
+	path = os.path.join(sys.argv[1], sys.argv[2])
 	shapes = []
 	list_path = []
 	for j in os.listdir(path):

@@ -7,8 +7,6 @@ kaggle.api.dataset_download_files('paultimothymooney/chest-xray-pneumonia', path
 
 try:
 	shutil.rmtree("./chest_xray/chest_xray")
-	shutil.move("./chest_xray", 
-              "./cdb_pneumonia")
 except:
 	print("Error removing duplicate images.")
 

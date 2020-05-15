@@ -1,6 +1,7 @@
 import os
 import shutil
 import sys
+from tqdm import tqdm
 
 PATH = sys.argv[1]
 for i in tqdm(os.listdir(PATH)):

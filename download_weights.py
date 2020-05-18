@@ -1,4 +1,5 @@
 import requests
+import os
 
 def download_file_from_google_drive(id, destination):
     URL = "https://docs.google.com/uc?export=download"
@@ -28,6 +29,9 @@ def save_response_content(response, destination):
         for chunk in response.iter_content(CHUNK_SIZE):
             if chunk: # filter out keep-alive new chunks
                 f.write(chunk)
+
+if "weights" not in os.listdir():
+    os.mkdir("weights")
 
 file_id = '19W9P7V5AF1uRYmh0zThlRexolI-NeEFu'
 destination = './weights/vgg16+VB_224x224.pt'

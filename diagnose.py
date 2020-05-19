@@ -134,6 +134,6 @@ for inp, filename in tqdm(zip(dataloaders, image_datasets.total_imgs)):
     ax3.set_xticklabels(["Normal", "Bacteriana", "Virica"])
 
     box2 = np.array(ax2.get_position())
-    cbar_ax = fig.add_axes([box2[0, 0] - 0.03, box2[0, 1], 0.01, box2[1, 1] - box2[0, 1]])
+    cbar_ax = fig.add_axes([box2[0, 0] - 0.04, box2[0, 1], 0.01, box2[1, 1] - box2[0, 1]])
     fig.colorbar(im, cax=cbar_ax)
     fig.savefig(os.path.join("diagnoses", filename))

@@ -2,4 +2,4 @@ chest_xray
 weights
 .idea/
 diagnoses
-__pycache__/transform_images.cpython-37.pyc
+__pycache__

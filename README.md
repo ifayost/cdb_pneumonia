@@ -10,7 +10,7 @@ Ejemplo de clasificación:
 
 ## Dpendencias
 * Python 3.7
-* Pytorch 3.5c
+* Pytorch 3.5
 * Numpy 1.18.1
 * Matplotlib 3.1.3
 * Tqdm 4.46
